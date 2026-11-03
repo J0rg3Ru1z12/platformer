@@ -26,6 +26,6 @@ const THEME = {
   player:       "#f2f2f2",   // the player
   playerEyes:   "#1b2a4a",   // the player's eyes
 
-  goal:         "#ffd34d",   // the goal flag
+  goal:         "#4dffa3",   // the goal flag
   text:         "#ffffff",   // score and messages
 };

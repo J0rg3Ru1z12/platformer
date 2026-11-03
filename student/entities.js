@@ -84,7 +84,16 @@ const ENEMY_TYPES = {
   },
 
   // <-- paste your new enemy here
-
+  speeder: {
+    movement: "chase",
+    speed: 100,
+    width: 18,
+    height: 16,
+    color: "#332b2b",
+    stompable: true,
+    points: 300,
+    turnsAtLedges: true,
+  },
 };
 
 
@@ -175,4 +184,5 @@ const LEGEND = {
   "H": { kind: "enemy",  name: "hopper" },
 
   // <-- add your new letters here
+  "R": { kind: "enemy", name: "speeder"},
 };
