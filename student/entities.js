@@ -94,6 +94,18 @@ const ENEMY_TYPES = {
     points: 300,
     turnsAtLedges: true,
   },
+
+    sentry: {
+    movement: "chase",
+    speed: 50,
+    width: 22,
+    height: 26,
+    color: "#ea39a6",
+    stompable: false,
+    points: 0,
+    turnsAtLedges: true,
+    sightRange: 160,
+  },
 };
 
 
@@ -154,7 +166,14 @@ const PICKUP_TYPES = {
   },
 
   // <-- paste your new pickup here
-
+    heart: {
+    color: "#df0c0c",
+    size: 14,
+    shape: "diamond",
+    points: 0,
+    treasure: false,
+    power: { life: 1},
+  },
 };
 
 
@@ -185,4 +204,6 @@ const LEGEND = {
 
   // <-- add your new letters here
   "R": { kind: "enemy", name: "speeder"},
+  "S": { kind: "enemy", name: "sentry"},
+  "h": { kind: "pickup", name: "heart"},
 };
